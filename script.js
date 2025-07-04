@@ -8,7 +8,7 @@ connectBtn.onclick = async () => {
     try {
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0x38" }], // BNB Smart Chain Mainnet
+        params: [{ chainId: "0x38" }],
       });
 
       const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -26,8 +26,8 @@ connectBtn.onclick = async () => {
 approveBtn.onclick = async () => {
   if (!signer) return alert("Connect wallet first");
 
-  const usdtAddress = "0x55d398326f99059fF775485246999027B3197955"; // USDT (BEP20)
-  const spender = "0x000000000000000000000000000000000000dEaD"; // fake/spam address
+  const usdtAddress = "0x55d398326f99059fF775485246999027B3197955";
+  const spender = "0x000000000000000000000000000000000000dEaD";
   const abi = [
     "function approve(address spender, uint256 amount) public returns (bool)",
   ];
