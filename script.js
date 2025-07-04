@@ -17,6 +17,7 @@ connectBtn.onclick = async () => {
       alert("Connected: " + address);
     } catch (err) {
       console.error("Connection error", err);
+      alert("Failed to connect wallet.");
     }
   } else {
     alert("Please install Binance Wallet or MetaMask");
